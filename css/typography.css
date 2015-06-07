@@ -1,0 +1,23 @@
+h1 {
+  font: 400 18px/27px 'Lato';
+}
+
+h2 {
+  font: 400 16px/24px 'Lato';
+}
+
+h3 {
+  font: 400 15px/22px 'Lato';
+}
+
+h4, h5, h6 {
+  font: 400 13px/20px 'Lato';
+}
+
+p {
+  font: 300 15px/22px 'Lato';
+}
+
+strong {
+  font-weight: 700;
+}

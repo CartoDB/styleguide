@@ -1,0 +1,59 @@
+.fill-blue {
+  background: #0090D7
+}
+.color-blue {
+  color: #0090D7
+}
+
+.fill-blue-light {
+  background: #F5FAFE
+}
+.color-blue-light {
+  color: #BCD8F1
+}
+
+.fill-green {
+  background: #8FB83F
+}
+.color-green {
+  color: #8FB83F
+}
+
+.fill-red {
+  background: #C74B43
+}
+.color-red {
+  color: #C74B43
+}
+
+.fill-orange {
+  background: #C67B44
+}
+.color-orange {
+  color: #C67B44
+}
+
+.fill-dark {
+  background: #333;
+}
+.color-dark {
+  color: #333;
+}
+
+.fill-medium {
+  background: #999;
+}
+.color-medium {
+  color: #999;
+}
+
+.fill-light {
+  background: #f9f9f9;
+}
+.color-light {
+  color: #ccc;
+}
+
+.color-white {
+  color: #fff;
+}

@@ -1,0 +1,1593 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<title>Your Website</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/prism.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" type="text/css" href="css/forms.css">
+<link rel="stylesheet" type="text/css" href="css/buttons.css">
+<link rel="stylesheet" type="text/css" href="css/typography.css">
+<link rel="stylesheet" type="text/css" href="css/utilities.css">
+<link rel="stylesheet" type="text/css" href="css/colours.css">
+<link rel="stylesheet" type="text/css" href="css/navigation.css">
+<link rel="stylesheet" type="text/css" href="css/guide.css">
+
+<style type="text/css">
+  .container {
+    width: 940px;
+    margin: 0 auto;
+  }
+  .module {
+    margin: 80px 0 80px 0;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .Grid {
+    margin-bottom: 20px;
+  }
+  .Grid-cell--bg {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #e5e5e5;
+  }
+  hr {
+    margin: 80px 0;
+  }
+
+</style>   
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <section class="module">
+    <h1 class="u-vspace-m"><strong>Grid</strong></h1>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;link rel="stylesheet" type="text/css" href="css/grid.css">
+</code>
+</pre>
+
+    <div class="inner u-vspace-xl">
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col12">
+            12 columns
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col11">
+            11
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col1">
+            1
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col10">
+            10
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col2">
+            2
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col9">
+            9
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col3">
+            3
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col8">
+            8
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col4">
+            4
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col7">
+            7
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col5">
+            5
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col6">
+            6
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col6">
+            6
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col5">
+            5
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col7">
+            7
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col4">
+            4
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col8">
+            8
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col3">
+            3
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col9">
+            9
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col2">
+            2
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col10">
+            10
+          </div>
+        </div>
+      </div>
+
+      <div class="Grid">
+        <div class="Grid-inner">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col1">
+            1
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col11">
+            11
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+      <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+/* the summ of both Grid-cell--colX must be 12 */
+&lt;div class="Grid">
+  &lt;div class="Grid-inner">
+    &lt;div class="Grid-cell Grid-cell--col6">6&lt;/div>
+    &lt;div class="Grid-cell Grid-cell--col6">6&lt;/div>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.Grid {
+  display: flex;
+}
+
+.Grid-inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.Grid-cell {
+  padding: 0 20px;
+}
+
+.Grid-cell--col1 {
+  flex: 0 0 8.3333%;
+  max-width: 8.3333%;
+}
+
+.Grid-cell--col2 {
+  flex: 0 0 16.6667%;
+  max-width: 16.6667%;
+}
+
+.Grid-cell--col3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.Grid-cell--col4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+.Grid-cell--col5 {
+  flex: 0 0 41.6665%;
+  max-width: 41.6665%;
+}
+
+.Grid-cell--col6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.Grid-cell--col7 {
+  flex: 0 0 58.3331%;
+  max-width: 58.331%;
+}
+
+.Grid-cell--col8 {
+  flex: 0 0 66.6666%;
+  max-width: 66.6666%;
+}
+
+.Grid-cell--col9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.Grid-cell--col10 {
+  flex: 0 0 83.333%;
+  max-width: 83.33%;
+}
+
+.Grid-cell--col11 {
+  flex: 0 0 91.6666%;
+  max-width: 91.6666%;
+}
+
+.Grid-cell--col12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+</code>
+</pre>
+
+  </div>
+<hr>
+
+    <h2>Grid center columns</h2>
+
+    <div class="inner u-vspace-xl">
+
+      <div class="Grid">
+        <div class="Grid-inner Grid-inner--hcenter">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col6">
+            6 columns center
+          </div>
+        </div>
+      </div>
+
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;div class="Grid-inner Grid-inner--hcenter">
+  &lt;div class="Grid-cell Grid-cell--col6">
+    6 columns center
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.Grid {
+  display: flex;
+}
+
+.Grid-inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.Grid-inner--hcenter {
+  justify-content: center;
+}
+
+.Grid-cell {
+  padding: 0 20px;
+}
+
+.Grid-cell--col6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+</code>
+</pre>
+
+  </div>
+    <hr/>
+
+    <h2>Grid vertical columns</h2>
+
+    <div class="inner u-vspace-xl">
+
+      <div class="Grid">
+        <div class="Grid-inner Grid-inner--vcenter">
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col6">
+            <br/>
+            <br/>
+            <br/>
+            6 columns
+            <br/>
+            <br/>
+            <br/>
+          </div>
+          <div class="Grid-cell Grid-cell--bg Grid-cell--col6">
+            6 columns center
+          </div>
+        </div>
+      </div>
+
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;div class="Grid-inner Grid-inner--vcenter">
+  &lt;div class="Grid-cell Grid-cell--col6">
+    6 columns center
+  &lt;/div>
+  &lt;div class="Grid-cell Grid-cell--col6">
+    6 columns center
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.Grid {
+  display: flex;
+}
+
+.Grid-inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.Grid-inner--vcenter {
+  align-items: center;
+}
+
+.Grid-cell {
+  padding: 0 20px;
+}
+
+.Grid-cell--col6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+</code>
+</pre>
+
+  </div>
+
+
+
+  </section>
+
+  <section class="module">
+    <h1 class="u-vspace-m"><strong>Utilities</strong></h1>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;link rel="stylesheet" type="text/css" href="css/utilities.css">
+</code>
+</pre>
+
+
+    <h2>Float: left</h2>
+    <div class="block clearfix">
+      <div class="u-left">
+        Element
+      </div>
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;div class="u-left">
+  Element
+&lt;/div>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.u-left { float: left; }
+</code>
+</pre>
+
+  </div>
+
+
+    <hr/>
+    <h2>Float: right</h2>
+    <div class="block clearfix">
+      <div class="u-right">
+        Element
+      </div>
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;div class="u-right">
+  Element
+&lt;/div>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.u-right { float: right; }
+</code>
+</pre>
+
+  </div>
+
+
+    <hr/>
+
+    <h2>List inline</h2>
+    <div class="block clearfix">
+      <ul class="u-ilist">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;ul class="u-ilist">
+  &lt;li>1&lt;/li>
+  &lt;li>2&lt;/li>
+  &lt;li>3&lt;/li>
+  &lt;li>4&lt;/li>
+&lt;/ul>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.u-ilist > li { display: inline-block; }
+</code>
+</pre>
+
+  </div>
+    <hr/>
+<h2>Uppercase</h2>
+    <div class="block clearfix">
+      <p class="u-tupper">
+        Transform uppercase
+      </p>
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;p class="u-tupper">
+  Transform uppercase
+&lt;/p>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.u-tupper { text-transform: uppercase; }
+</code>
+</pre>
+
+  </div>
+
+
+    <hr/>
+
+    <h2>List inline</h2>
+    <div class="block clearfix">
+      <ul class="u-ilist">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;ul class="u-ilist">
+  &lt;li>1&lt;/li>
+  &lt;li>2&lt;/li>
+  &lt;li>3&lt;/li>
+  &lt;li>4&lt;/li>
+&lt;/ul>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.u-ilist > li { display: inline-block; }
+</code>
+</pre>
+
+  </div>
+
+
+
+
+</hr/>
+    <h2>Align text</h2>
+    <div class="block clearfix">
+      <p class="u-txt-center">Text align center</p>
+      <p class="u-txt-right">Text align right</p>
+      <p class="u-txt-left">Text align left</p>
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+/* height what you need */
+&lt;p class="u-txt-center">Text align center&lt;/p>
+&lt;p class="u-txt-right">Text align right&lt;/p>
+&lt;p class="u-txt-left">Text align left&lt;/p>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.u-txt-center { text-align: center; }
+.u-txt-left { text-align: left; }
+.u-txt-right { text-align: right; }
+</code>
+</pre>
+
+  </div>
+
+    <hr/>
+
+    <h2>Vertical align text</h2>
+    <div class="block clearfix u-valign" style="height: 200px;">
+      <p class="u-iblock u-malign">Vertical-align</p>
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+/* height what you need */
+&lt;div class="block clearfix u-valign" style="height: 200px;">
+  &lt;p class="u-iblock u-malign">Vertical-align&lt;/p>
+&lt;/div>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.u-iblock { display: inline-block; }
+.u-malign { vertical-align: middle; }
+.u-valign:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  height: 100%;
+  margin-left: -5px;
+}
+</code>
+</pre>
+
+  </div>
+
+
+    <hr/>
+
+    <h2>Overflow text 2 lines default</h2>
+    <div class="block clearfix">
+      <p class="u-vellipsis">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;p class="u-vellipsis">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.u-vellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+</code>
+</pre>
+
+  </div>
+
+
+    <hr/>
+
+    <h2>Overflow text 3 lines</h2>
+    <div class="block clearfix">
+      <p class="u-vellipsis u-vellipsis--3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;p class="u-vellipsis u-vellipsis--3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.u-vellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.u-vellipsis--3 {
+  -webkit-line-clamp: 3;
+}
+</code>
+</pre>
+
+  </div>
+
+
+    <hr/>
+
+    <h2>Overflow text 1 lines</h2>
+    <div class="block clearfix">
+      <p class="u-vellipsis u-vellipsis--1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;p class="u-vellipsis u-vellipsis--1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.u-vellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.u-vellipsis--1 {
+  -webkit-line-clamp: 1;
+}
+
+</code>
+</pre>
+
+  </div>
+
+
+    <hr/>
+
+
+    <h2>Image rounded</h2>
+    <div class="block clearfix">
+      <img class="u-img-circle" src="http://gravatar.com/avatar/6da1b884950fd587614122ab8b1a50bf?s=128" />
+    </div>
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;img class="u-img-circle" src="http://gravatar.com/avatar/6da1b884950fd587614122ab8b1a50bf?s=128" />
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.u-img-circle { border-radius: 50%; }
+</code>
+</pre>
+
+  </div>
+
+  </section>
+
+
+
+  <section class="module">
+    <h1 class="u-vspace-m"><strong>Colours</strong></h1>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;link rel="stylesheet" type="text/css" href="css/colours.css">
+</code>
+</pre>
+
+    <div class="u-vspace-xl">
+        <div class="fill fill-blue">
+          <p class="color-white">&lt;div class="fill fill-blue"></p>
+        </div>
+        <div class="fill fill-blue-light">
+          <p>&lt;div class="fill fill-blue"></p>
+        </div>
+        <div class="fill fill-green">
+          <p class="color-white">&lt;div class="fill fill-green"></p>
+        </div>
+        <div class="fill fill-red">
+          <p class="color-white">&lt;div class="fill fill-green"></p>
+        </div>
+        <div class="fill fill-orange">
+          <p class="color-white">&lt;div class="fill fill-orange"></p>
+        </div>
+        <div class="fill fill-dark">
+          <p class="color-white">&lt;div class="fill fill-dark"></p>
+        </div>
+        <div class="fill fill-medium">
+          <p>&lt;div class="fill fill-medium"></p>
+        </div>
+        <div class="fill fill-light">
+          <p>&lt;div class="fill fill-light"></p>
+        </div>
+      </div>
+      <div class="u-vspace-xl">
+        <p class="color-blue">&lt;p class="color-blue">Blue text&lt;/p></p>
+        <p class="color-blue-light">&lt;p class="color-blue-light">Blue light text&lt;/p></p>
+        <p class="color-green">&lt;p class="color-green">Green text&lt;/p></p>
+        <p class="color-red">&lt;p class="color-red">Red text&lt;/p></p>
+        <p class="color-orange">&lt;p class="color-orange">Orange text&lt;/p></p>
+        <p class="color-dark">&lt;p class="color-dark">Dark text&lt;/p></p>
+        <p class="color-medium">&lt;p class="color-medium">Medium text&lt;/p></p>
+        <p class="color-light">&lt;p class="color-light">Light text&lt;/p></p>
+      </div>
+
+  <div class="clearfix">
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.fill-blue {
+  background: #0090D7
+}
+.color-blue {
+  color: #0090D7
+}
+
+.fill-blue-light {
+  background: #F5FAFE
+}
+.color-blue-light {
+  color: #BCD8F1
+}
+
+.fill-green {
+  background: #8FB83F
+}
+.color-green {
+  color: #8FB83F
+}
+
+.fill-red {
+  background: #C74B43
+}
+.color-red {
+  color: #C74B43
+}
+
+.fill-orange {
+  background: #C67B44
+}
+.color-orange {
+  color: #C67B44
+}
+
+.fill-dark {
+  background: #333;
+}
+.color-dark {
+  color: #333;
+}
+
+.fill-medium {
+  background: #999;
+}
+.color-medium {
+  color: #999;
+}
+
+.fill-light {
+  background: #f9f9f9;
+}
+.color-light {
+  color: #ccc;
+}
+
+.color-white {
+  color: #fff;
+}
+</code>
+</pre>
+
+  </div>
+
+  </section>
+
+
+  <section class="module">
+    <h1 class="u-vspace-m"><strong>Typography</strong></h1>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;link rel="stylesheet" type="text/css" href="css/typography.css">
+</code>
+</pre>
+    <div class="u-vspace-xl">
+
+      <h1>h1 - Heading 1</h1>
+      <h2>h2 - Heading 2</h2>
+      <h3>h3 - Heading 3</h3>
+      <h4>h4 - Heading 4</h4>
+      <h5>h5 - Heading 5</h5>
+      <h6>h6 - Heading 6</h6>
+    </div>
+
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;h1>h1 - Heading 1&lt;/h1>
+&lt;h2>h2 - Heading 2&lt;/h2>
+&lt;h3>h3 - Heading 3&lt;/h3>
+&lt;h4>h4 - Heading 4&lt;/h4>
+&lt;h5>h5 - Heading 5&lt;/h5>
+&lt;h6>h6 - Heading 6&lt;/h6>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+h1 {
+  font: 400 18px/27px 'Lato';
+}
+
+h2 {
+  font: 400 16px/24px 'Lato';
+}
+
+h3 {
+  font: 400 15px/22px 'Lato';
+}
+
+h4, h5, h6 {
+  font: 400 13px/20px 'Lato';
+}
+</code>
+</pre>
+
+  </div>
+
+    <hr>
+
+    <div class="u-vspace-xl">
+      <p>Text by default - CartoDB is a set of powerful geospatial APIs, enabling the most easy to use Map Editor and an ecosystem of thousands of users and partners developing creating maps and apps with it. CartoDB is democratizing location intelligence.</p>
+    </div>
+
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;p>Text by default - CartoDB is a set of powerful geospatial APIs, enabling the most easy to use Map Editor and an ecosystem of thousands of users and partners developing creating maps and apps with it. CartoDB is democratizing location intelligence.&lt;/p>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+p {
+  font: 300 15px/22px 'Lato';
+}
+</code>
+</pre>
+
+  </div>
+
+    <hr>
+  <div class="u-vspace-xl">
+
+    <h1><strong>h1 bold - Heading 1</strong></h1>
+    <h2><strong>h2 bold - Heading 2</strong></h2>
+    <h3><strong>h3 bold - Heading 3</strong></h3>
+    <h4><strong>h4 bold - Heading 4</strong></h4>
+    <h5><strong>h5 bold - Heading 5</strong></h5>
+    <h6><strong>h6 bold - Heading 6</strong></h6>
+  </div>
+
+  <div class="clearfix">
+
+<h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;h1>&lt;strong>h1 - Heading 1&lt;/strong>&lt;/h1>
+&lt;h2>&lt;strong>h2 - Heading 2&lt;/strong>&lt;/h2>
+&lt;h3>&lt;strong>h3 - Heading 3&lt;/strong>&lt;/h3>
+&lt;h4>&lt;strong>h4 - Heading 4&lt;/strong>&lt;/h4>
+&lt;h5>&lt;strong>h5 - Heading 5&lt;/strong>&lt;/h5>
+&lt;h6>&lt;strong>h6 - Heading 6&lt;/strong>&lt;/h6>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+h1 {
+  font: 400 18px/27px 'Lato';
+}
+
+h2 {
+  font: 400 16px/24px 'Lato';
+}
+
+h3 {
+  font: 400 15px/22px 'Lato';
+}
+
+h4, h5, h6 {
+  font: 400 13px/20px 'Lato';
+}
+
+strong {
+  font-weight: 700;
+}
+</code>
+</pre>
+
+  </div>
+
+</section>
+
+
+<section class="module">
+  <h1 class="u-vspace-m"><strong>Navigation</strong></h1>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;link rel="stylesheet" type="text/css" href="css/navigation.css">
+</code>
+</pre>
+  <hr/>
+
+<div class="u-vspace-xl">
+  <nav class="navigation">
+    <ul class="u-ilist js-navigation">
+      <li><a href="#">Data Library</a></li>
+      <li><a href="#" class="is-selected">New Dataset</a></li>
+    </ul>
+  </nav>
+</div>
+
+  <div class="clearfix">
+    <h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;nav class="navigation">
+  &lt;ul class="u-ilist js-navigation">
+    &lt;li>&lt;a href="#">Data Library&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#" class="is-selected">New Dataset&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/nav>
+</code>
+</pre>
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.navigation {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 34px;
+}
+.navigation > ul > li {
+  font: 15px 'Lato';
+  border-left: 1px solid #eee;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+.navigation > ul > li:first-child {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.navigation a {
+  color: #0090D7;
+  text-decoration: none;
+}
+.navigation a.is-selected {
+  color: #000;
+  position: relative;
+}
+.navigation a.is-selected:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+  left: 0;
+  background: #000;
+  height: 1px;
+}
+</code>
+</pre>
+
+  </div>
+
+  <hr/>
+
+  <p class="button button--green">
+    <a href="#">
+      Create
+    </a>
+  </p>
+
+  <div class="clearfix">
+    <h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;p class="button button--green">
+  &lt;a href="#">Create&lt;/a>
+&lt;/p>
+</code>
+</pre>
+
+    <h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.button {
+  text-transform: uppercase;
+  font: 700 12px 'Lato';
+  text-align: center;
+}
+.button > a {
+  display: inline-block;
+  padding: 13px;
+  min-width: 140px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  transition: background .3s;
+}
+.button--green a {
+  background: #8EB83F;
+}
+.button--green a:hover {
+  background: #7FA538;
+}
+</code>
+</pre>
+
+   </div>
+
+
+</section>
+
+
+
+<section class="module">
+  <h1 class="u-vspace-m"><strong>Buttons</strong></h1>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;link rel="stylesheet" type="text/css" href="css/buttons.css">
+</code>
+</pre>
+  <hr/>
+
+  <p class="button button--blue">
+    <a href="#">
+      Ok
+    </a>
+  </p>
+  <div class="clearfix">
+    <h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;p class="button button--blue">
+&lt;a href="#">Ok&lt;/a>
+&lt;/p>
+</code>
+</pre>
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.button {
+  text-transform: uppercase;
+  font: 700 12px 'Lato';
+  text-align: center;
+}
+.button > a {
+  display: inline-block;
+  padding: 13px;
+  min-width: 140px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  transition: background .3s;
+}
+.button--blue a {
+  background: #0090D7;
+}
+.button--blue a:hover {
+  background: #007FBD;
+}
+</code>
+</pre>
+
+  </div>
+
+  <hr/>
+
+  <p class="button button--green">
+    <a href="#">
+      Create
+    </a>
+  </p>
+
+  <div class="clearfix">
+    <h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;p class="button button--green">
+  &lt;a href="#">Create&lt;/a>
+&lt;/p>
+</code>
+</pre>
+
+    <h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.button {
+  text-transform: uppercase;
+  font: 700 12px 'Lato';
+  text-align: center;
+}
+.button > a {
+  display: inline-block;
+  padding: 13px;
+  min-width: 140px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  transition: background .3s;
+}
+.button--green a {
+  background: #8EB83F;
+}
+.button--green a:hover {
+  background: #7FA538;
+}
+</code>
+</pre>
+
+   </div>
+
+  <hr/>
+
+  <p class="button button--red">
+    <a href="#">
+      Negative
+    </a>
+  </p>
+
+  <div class="clearfix">
+    <h3>HTML</H3>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;p class="button button--red">
+  &lt;a href="#">Negative&lt;/a>
+&lt;/p>
+</code>
+</pre>
+    <h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.button {
+  text-transform: uppercase;
+  font: 700 12px 'Lato';
+  text-align: center;
+}
+.button > a {
+  display: inline-block;
+  padding: 13px;
+  min-width: 140px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  transition: background .3s;
+}
+.button--red a {
+  background: #C74B43;
+}
+.button--red a:hover {
+  background: #B93F37;
+}
+</code>
+</pre>
+  <hr/>
+
+  <p class="button button--outline">
+    <a href="#">
+      Skip
+    </a>
+  </p>
+
+  <div class="clearfix">
+    <h3>HTML</H3>
+    <pre class="prettyprint">
+<code class="language-markup">
+&lt;p class="button button--outline">
+  &lt;a href="#">Skip&lt;/a>
+&lt;/p>
+</code>
+</pre>
+    <h3>CSS</H3>
+    <pre class="prettyprint">
+<code class="language-css">
+.button {
+  text-transform: uppercase;
+  font: 700 12px 'Lato';
+  text-align: center;
+}
+.button > a {
+  display: inline-block;
+  padding: 13px;
+  min-width: 140px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  transition: background .3s;
+}
+.button--outline a {
+  color: #666;
+  border: 1px solid #ccc;
+}
+.button--outline a:hover {
+  color: #fff;
+  background: #ccc;
+}
+</code>
+    </pre>
+</div>
+
+</section>
+
+<section class="module">
+  <h1 class="u-vspace-m"><strong>Forms</strong></h1>
+<pre class="prettyprint">
+<code class="language-markup">
+&lt;link rel="stylesheet" type="text/css" href="css/forms.css">
+</code>
+</pre>
+<hr>
+  <input type="radio" name="foo" value="foo" checked>
+  <input type="radio" name="foo" value="foo2">
+  <div class="clearfix">
+    <h3>HTML</H3>
+    <pre class="prettyprint">
+<code class="language-markup">
+&lt;input type="radio" name="foo" value="foo" checked>
+&lt;input type="radio" name="foo" value="foo2">
+</code>
+</pre>
+    <h3>CSS</H3>
+    <pre class="prettyprint">
+<code class="language-css">
+*:focus {
+  outline: none;
+}
+input[type=radio] {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  position: relative;
+}
+input[type="radio"]:checked:before {
+  content:"";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #189BDB;
+}
+</code>
+    </pre>
+</div>
+
+
+  <hr/>
+  <input type="checkbox" class="checkbox" name="foo" value="foo">
+  <div class="clearfix">
+    <h3>HTML</H3>
+    <pre class="prettyprint">
+<code class="language-markup">
+&lt;input type="checkbox" class="checkbox" name="foo" value="foo">
+</code>
+</pre>
+    <h3>CSS</H3>
+    <pre class="prettyprint">
+<code class="language-css">
+*:focus {
+  outline: none;
+}
+input[type=checkbox] {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+input[type="checkbox"].checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  position: relative;
+}
+input[type=checkbox]:checked.checkbox:after  {
+  content: '\2713';
+  position: absolute;
+  color: #0090D7;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  left: 0;
+  right: 0;
+}
+</code>
+    </pre>
+</div>
+
+  <hr/>
+  <input type="checkbox" class="toogle" name="foo" value="foo">
+  <div class="clearfix">
+    <h3>HTML</H3>
+    <pre class="prettyprint">
+<code class="language-markup">
+&lt;input type="checkbox" class="toogle" name="foo" value="foo">
+</code>
+</pre>
+    <h3>CSS</H3>
+    <pre class="prettyprint">
+<code class="language-css">
+*:focus {
+  outline: none;
+}
+input[type=checkbox] {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+input[type=checkbox].toogle {
+  border: 0;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, .1);
+  background: #ddd;
+  border-radius: 50px;
+  width: 36px;
+  height: 20px;
+  position: relative;
+}
+input[type=checkbox].toogle:before {
+  content: "";
+  top: 4px;
+  left: 4px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+input[type=checkbox]:checked.toogle {
+  background: #8FB83F
+}
+input[type=checkbox]:checked.toogle:before {
+  left: auto;
+  right: 4px;
+}
+</code>
+    </pre>
+</div>
+
+
+  <hr/>
+  <div>
+  <div class="Grid">
+    <div class="Grid-inner Grid-inner--vcenter">
+      <div class="Grid-cell Grid-cell--col1">
+        <label>Category</label>
+      </div>
+      <div class="Grid-cell Grid-cell--col11">
+        <input type="text" name="input" placeholder="Insert your terms separated by commas" />
+      </div>
+    </div>
+  </div>
+
+
+<div class="clearfix">
+    <h3>HTML</H3>
+    <pre class="prettyprint">
+<code class="language-markup">
+/* you can adapt and use the grid you need */
+&lt;div class="Grid">
+  &lt;div class="Grid-inner Grid-inner--vcenter">
+  &lt;div class="Grid-cell Grid-cell--col1">
+      &lt;label>Category&lt;/label>
+    &lt;/div>
+    &lt;div class="Grid-cell Grid-cell--col11">
+      &lt;input type="text" name="input" placeholder="Insert your terms separated by commas" />
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+    <h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+*:focus {
+  outline: none;
+}
+input[type=text] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: 300 13px 'Lato';
+  color: #666;
+  padding: 11px 13px;
+  display: block;
+  width: 100%
+}
+input[type=text]:placeholder {
+  color: #ccc;
+}
+
+label {
+  font: 300 13px 'Lato';
+  color: #666;
+}
+</code>
+</pre>
+</div>
+
+    
+    
+  </div>
+</div>
+
+</div>
+
+<script>
+  $( document ).ready(function() {
+    $( ".js-navigation a" ).click(function() {
+       $( ".js-navigation a" ).toggleClass("is-selected");
+       return false;
+    });
+  });
+</script>
+
+<script src="js/prism.js"></script>
+
+
+</body>
+
+</html>

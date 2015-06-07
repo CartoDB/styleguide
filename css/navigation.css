@@ -1,0 +1,36 @@
+.navigation {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 34px;
+}
+
+.navigation > ul > li {
+  font: 15px 'Lato';
+  border-left: 1px solid #eee;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.navigation > ul > li:first-child {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  color: #0090D7;
+  text-decoration: none;
+}
+
+.navigation a.is-selected {
+  color: #000;
+  position: relative;
+}
+.navigation a.is-selected:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -35px;
+  left: 0;
+  background: #000;
+  height: 1px;
+}
