@@ -2444,6 +2444,68 @@ label {
 </pre>
 </div>
 
+
+<hr/>
+  <div>
+  <div class="Grid">
+    <div class="Grid-inner Grid-inner--vcenter">
+      <div class="Grid-cell Grid-cell--col1">
+        <label>Category</label>
+      </div>
+      <div class="Grid-cell Grid-cell--col11">
+        <div class="u-pr">
+          <input type="text" name="input" placeholder="Insert your terms separated by commas" />
+          <i class="IconFont IconFont--size18 IconFont--twitter color-light u-pa" style="right: 10px; top: 10px;"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="clearfix">
+    <h3>HTML</H3>
+    <pre class="prettyprint">
+<code class="language-markup">
+/* you can adapt and use the grid you need */
+&lt;div class="Grid">
+  &lt;div class="Grid-inner Grid-inner--vcenter">
+  &lt;div class="Grid-cell Grid-cell--col1">
+      &lt;label>Category&lt;/label>
+    &lt;/div>
+    &lt;div class="Grid-cell Grid-cell--col11">
+      &lt;input type="text" name="input" placeholder="Insert your terms separated by commas" />
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+    <h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+*:focus {
+  outline: none;
+}
+input[type=text] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: 300 13px 'Lato';
+  color: #666;
+  padding: 11px 13px;
+  display: block;
+  width: 100%
+}
+input[type=text]:placeholder {
+  color: #ccc;
+}
+
+label {
+  font: 300 13px 'Lato';
+  color: #666;
+}
+</code>
+</pre>
+</div>
+
     
     
   </div>
