@@ -100,3 +100,12 @@ input[type=checkbox] {
     font: 300 13px 'Lato';
     color: #666;
   }
+
+  .InputDecoration input[type=text] {
+    padding-right: 40px;
+  }
+
+  .InputDecoration-icon {
+    right: 10px;
+    top: 10px;
+  }

@@ -2453,9 +2453,9 @@ label {
         <label>Category</label>
       </div>
       <div class="Grid-cell Grid-cell--col11">
-        <div class="u-pr">
+        <div class="u-pr InputDecoration">
           <input type="text" name="input" placeholder="Insert your terms separated by commas" />
-          <i class="IconFont IconFont--size18 IconFont--twitter color-light u-pa" style="right: 10px; top: 10px;"></i>
+          <i class="IconFont IconFont--size18 IconFont--twitter color-light InputDecoration-icon u-pa"></i>
         </div>
       </div>
     </div>
@@ -2473,7 +2473,10 @@ label {
       &lt;label>Category&lt;/label>
     &lt;/div>
     &lt;div class="Grid-cell Grid-cell--col11">
-      &lt;input type="text" name="input" placeholder="Insert your terms separated by commas" />
+        &lt;div class="u-pr InputDecoration">
+          &lt;input type="text" name="input" placeholder="Insert your terms separated by commas" />
+          &lt;i class="IconFont IconFont--size18 IconFont--twitter color-light InputDecoration-icon u-pa">&lt;/i>
+        &lt;/div>
     &lt;/div>
   &lt;/div>
 &lt;/div>
@@ -2501,6 +2504,15 @@ input[type=text]:placeholder {
 label {
   font: 300 13px 'Lato';
   color: #666;
+}
+
+.InputDecoration input[type=text] {
+  padding-right: 40px;
+}
+
+.InputDecoration-icon {
+  right: 10px;
+  top: 10px;
 }
 </code>
 </pre>
