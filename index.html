@@ -2834,13 +2834,13 @@ Vertical(Tooltip--vertical-bottom, Tooltip--vertical-top)*/
 
 <h2>Dropdowns</h2>
 <div class="block clearfix">
-    <div class="u-vspace-xl u-pr">
+    <div class="u-vspace-xl">
       <p>Text where if you make
-        <a href="#">
+        <a href="#" class="js-dropdown">
           Top and center
         </a>
       </p>
-      <div class="Dropdown" style="display: block;">
+      <div class="Dropdown">
         <ul>
           <li class="Dropdown-item"><a href="#" class="is-selected">Your maps</a></li>
           <li class="Dropdown-item"><a href="#">Your datasets</a></li>
@@ -2862,9 +2862,19 @@ Vertical(Tooltip--vertical-bottom, Tooltip--vertical-top)*/
 
 <script>
   $( document ).ready(function() {
-    $( ".js-navigation a" ).click(function() {
+    $( ".js-navigation a" ).click(function(e) {
+       e.preventDefault();
        $( ".js-navigation a" ).toggleClass("is-selected");
-       return false;
+    });
+
+
+    $(".js-dropdown").click(function(e){
+      e.preventDefault();
+      var posX = $(this).position().left ,posY = $(this).position().top;
+      $(".Dropdown").css('display', 'block');
+
+      $(".Dropdown").css('left', (e.pageX)-120);
+      $(".Dropdown").css('top', (e.pageY)+20);
     });
 
     $('select').each(function(){
