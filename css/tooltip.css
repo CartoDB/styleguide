@@ -1,0 +1,81 @@
+.Tooltip {
+  position: absolute;
+  padding: 12px 20px;
+  font: 400 13px 'Lato';
+  background: rgba(0, 0, 0, .8);
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+}
+
+*:hover > .Tooltip {
+  display: block;
+}
+
+.Tooltip--horizontal-middle {
+  text-align: center;
+  left: 50%;
+  width: 160px;
+  margin-left: -80px;
+}
+
+.Tooltip--horizontal-left {
+  text-align: left;
+  left: -6px;
+}
+
+.Tooltip--horizontal-right {
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+
+.Tooltip--vertical-top{
+  bottom: 160%;
+  top: auto;
+}
+ .Tooltip--vertical-top:before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-top: 8px solid rgba(0, 0, 0, .8);
+  bottom: -16px;
+ } 
+
+ .Tooltip--horizontal-left.Tooltip--vertical-top:before {
+  left: 20px;
+ } 
+ .Tooltip--horizontal-right.Tooltip--vertical-top:before {
+  right: 20px;
+ } 
+.Tooltip--horizontal-middle.Tooltip--vertical-top:before {
+  left: 50%;
+  margin-left: -8px;
+ } 
+
+.Tooltip--vertical-bottom{
+  top: 160%;
+  bottom: auto;
+}
+ .Tooltip--vertical-bottom:before {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom: 8px solid rgba(0, 0, 0, .8);
+  top: -16px;
+ }  
+ .Tooltip--horizontal-left.Tooltip--vertical-bottom:before {
+  left: 20px;
+ } 
+ .Tooltip--horizontal-right.Tooltip--vertical-bottom:before {
+  right: 20px;
+ } 
+.Tooltip--horizontal-middle.Tooltip--vertical-bottom:before {
+  left: 50%;
+  margin-left: -8px;
+ } 
+
