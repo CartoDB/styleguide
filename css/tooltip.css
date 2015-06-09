@@ -32,7 +32,7 @@
 }
 
 .Tooltip--vertical-top{
-  bottom: 160%;
+  bottom: 130%;
   top: auto;
 }
  .Tooltip--vertical-top:before {
@@ -57,7 +57,7 @@
  } 
 
 .Tooltip--vertical-bottom{
-  top: 160%;
+  top: 130%;
   bottom: auto;
 }
  .Tooltip--vertical-bottom:before {
@@ -95,6 +95,9 @@
   bottom: auto;
   box-shadow: 0 0 4px rgba(0, 0, 0, .2);
 }
+.Dropdown.is-active {
+  display: block;
+}
 .Dropdown:before {
   content:"";
   width: 0;
@@ -105,8 +108,8 @@
   left: 50%;
   margin-left: -4px;
   top: -16px;
-  -webkit-filter: drop-shadow(0 -2px 1px rgba(0, 0, 0, .05));
-  filter: drop-shadow(0 -2px 1px rgba(0, 0, 0, .05));
+  -webkit-filter: drop-shadow(0 -2px 1px rgba(0, 0, 0, .1));
+  filter: drop-shadow(0 -2px 1px rgba(0, 0, 0, .1));
 }
 .Dropdown-item {
   font: 15px 'Lato';

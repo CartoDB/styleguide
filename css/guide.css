@@ -15,3 +15,7 @@
 .ListIcons .Grid-cell {
   margin-bottom: 40px;
 }
+
+pre.zeroclipboard-is-hover {
+  background: #f8f8f8;
+}

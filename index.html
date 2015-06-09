@@ -6,7 +6,7 @@
 <meta charset="UTF-8" />
 <title>Your Website</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+<script src="js/ZeroClipboard.min.js"></script>
 
 
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
@@ -45,7 +45,9 @@
   hr {
     margin: 80px 0;
   }
-
+  .copy-box {
+    cursor: pointer;
+  }
 </style>   
 
 
@@ -57,11 +59,12 @@
 
   <section class="module">
     <h1 class="u-vspace-m"><strong>Grid</strong></h1>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box u-pr" data-clipboard-target="link-grid">
+<code class="language-markup" id="link-grid">
 &lt;link rel="stylesheet" type="text/css" href="css/grid.css">
 </code>
 </pre>
+
 
     <div class="inner u-vspace-xl">
 
@@ -199,8 +202,8 @@
       <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-grid">
+<code class="language-markup" id="html-grid">
 /* the summ of both Grid-cell--colX must be 12 */
 &lt;div class="Grid">
   &lt;div class="Grid-inner">
@@ -210,6 +213,8 @@
 &lt;/div>
 </code>
 </pre>
+
+
 
 
 <h3>CSS</H3>
@@ -312,8 +317,9 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+
+<pre class="prettyprint copy-box" data-clipboard-target="html-grid-center">
+<code class="language-markup" id="html-grid-center">
 &lt;div class="Grid-inner Grid-inner--hcenter">
   &lt;div class="Grid-cell Grid-cell--col6">
     6 columns center
@@ -381,8 +387,8 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-grid-center-vertical">
+<code class="language-markup" id="html-grid-center-vertical">
 &lt;div class="Grid-inner Grid-inner--vcenter">
   &lt;div class="Grid-cell Grid-cell--col6">
     6 columns center
@@ -1282,8 +1288,8 @@
 <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-icon">
+<code class="language-markup" id="html-icon">
 /* put the name of the icon and the size you need */
 &lt;i class="IconFont IconFont--size30 IconFont--settings">&lt;/i>
 </code>
@@ -1407,8 +1413,9 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+
+<pre class="prettyprint copy-box" data-clipboard-target="html-float-left">
+<code class="language-markup" id="html-float-left">
 &lt;div class="u-left">
   Element
 &lt;/div>
@@ -1436,8 +1443,8 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-float-right">
+<code class="language-markup" id="html-float-right">
 &lt;div class="u-right">
   Element
 &lt;/div>
@@ -1469,8 +1476,8 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-list-inline">
+<code class="language-markup" id="html-list-inline">
 &lt;ul class="u-ilist">
   &lt;li>1&lt;/li>
   &lt;li>2&lt;/li>
@@ -1499,8 +1506,8 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-uppercase">
+<code class="language-markup" id="html-uppercase">
 &lt;p class="u-tupper">
   Transform uppercase
 &lt;/p>
@@ -1530,8 +1537,8 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-align-text">
+<code class="language-markup" id="html-align-text">
 /* height what you need */
 &lt;p class="u-txt-center">Text align center&lt;/p>
 &lt;p class="u-txt-right">Text align right&lt;/p>
@@ -1560,8 +1567,8 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-vertical-align">
+<code class="language-markup" id="html-vertical-align">
 /* height what you need */
 &lt;div class="block clearfix u-valign" style="height: 200px;">
   &lt;p class="u-iblock u-malign">Vertical-align&lt;/p>
@@ -1597,8 +1604,8 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-overflow-2">
+<code class="language-markup" id="html-overflow-2">
 &lt;p class="u-vellipsis">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 </code>
 </pre>
@@ -1629,8 +1636,8 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-overflow-3">
+<code class="language-markup" id="html-overflow-3">
 &lt;p class="u-vellipsis u-vellipsis--3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 </code>
 </pre>
@@ -1664,8 +1671,8 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-overflow-1">
+<code class="language-markup" id="html-overflow-1">
 &lt;p class="u-vellipsis u-vellipsis--1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 </code>
 </pre>
@@ -1700,9 +1707,9 @@
     </div>
   <div class="clearfix">
 
-<h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<h3>HTML</h3>
+<pre class="prettyprint copy-box" data-clipboard-target="html-image-rounded">
+<code class="language-markup" id="html-image-rounded">
 &lt;img class="u-img-circle" src="http://gravatar.com/avatar/6da1b884950fd587614122ab8b1a50bf?s=128" />
 </code>
 </pre>
@@ -1723,8 +1730,8 @@
 
   <section class="module">
     <h1 class="u-vspace-m"><strong>Colours</strong></h1>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="link-colours">
+<code class="language-markup" id="link-colours">
 &lt;link rel="stylesheet" type="text/css" href="css/colours.css">
 </code>
 </pre>
@@ -1839,8 +1846,8 @@
 
   <section class="module">
     <h1 class="u-vspace-m"><strong>Typography</strong></h1>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="link-typography">
+<code class="language-markup" id="link-typography">
 &lt;link rel="stylesheet" type="text/css" href="css/typography.css">
 </code>
 </pre>
@@ -1857,8 +1864,8 @@
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-typography">
+<code class="language-markup" id="html-typography">
 &lt;h1>h1 - Heading 1&lt;/h1>
 &lt;h2>h2 - Heading 2&lt;/h2>
 &lt;h3>h3 - Heading 3&lt;/h3>
@@ -1901,8 +1908,9 @@ h4, h5, h6 {
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+
+<pre class="prettyprint copy-box" data-clipboard-target="html-text-default">
+<code class="language-markup" id="html-text-default">
 &lt;p>Text by default - CartoDB is a set of powerful geospatial APIs, enabling the most easy to use Map Editor and an ecosystem of thousands of users and partners developing creating maps and apps with it. CartoDB is democratizing location intelligence.&lt;/p>
 </code>
 </pre>
@@ -1933,8 +1941,8 @@ p {
   <div class="clearfix">
 
 <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-headlines">
+<code class="language-markup" id="html-headlines">
 &lt;h1>&lt;strong>h1 - Heading 1&lt;/strong>&lt;/h1>
 &lt;h2>&lt;strong>h2 - Heading 2&lt;/strong>&lt;/h2>
 &lt;h3>&lt;strong>h3 - Heading 3&lt;/strong>&lt;/h3>
@@ -1977,8 +1985,8 @@ strong {
 
 <section class="module">
   <h1 class="u-vspace-m"><strong>Navigation</strong></h1>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="link-navigation">
+<code class="language-markup" id="link-navigation">
 &lt;link rel="stylesheet" type="text/css" href="css/navigation.css">
 </code>
 </pre>
@@ -1995,8 +2003,8 @@ strong {
 
   <div class="clearfix">
     <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-navigation">
+<code class="language-markup" id="html-navigation">
 &lt;nav class="navigation">
   &lt;ul class="u-ilist js-navigation">
     &lt;li>&lt;a href="#">Data Library&lt;/a>&lt;/li>
@@ -2051,8 +2059,9 @@ strong {
 
 <section class="module">
   <h1 class="u-vspace-m"><strong>Buttons</strong></h1>
-<pre class="prettyprint">
-<code class="language-markup">
+
+<pre class="prettyprint copy-box" data-clipboard-target="link-buttons">
+<code class="language-markup" id="link-buttons">
 &lt;link rel="stylesheet" type="text/css" href="css/buttons.css">
 </code>
 </pre>
@@ -2065,8 +2074,9 @@ strong {
   </p>
   <div class="clearfix">
     <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+
+<pre class="prettyprint copy-box" data-clipboard-target="button-blue">
+<code class="language-markup" id="button-blue">
 &lt;p class="button button--blue">
 &lt;a href="#">Ok&lt;/a>
 &lt;/p>
@@ -2111,8 +2121,8 @@ strong {
 
   <div class="clearfix">
     <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="button-green">
+<code class="language-markup" id="button-green">
 &lt;p class="button button--green">
   &lt;a href="#">Create&lt;/a>
 &lt;/p>
@@ -2157,8 +2167,8 @@ strong {
 
   <div class="clearfix">
     <h3>HTML</H3>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="button-red">
+<code class="language-markup" id="button-red">
 &lt;p class="button button--red">
   &lt;a href="#">Negative&lt;/a>
 &lt;/p>
@@ -2199,8 +2209,8 @@ strong {
 
   <div class="clearfix">
     <h3>HTML</H3>
-    <pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="button-outline">
+<code class="language-markup" id="button-outline">
 &lt;p class="button button--outline">
   &lt;a href="#">Skip&lt;/a>
 &lt;/p>
@@ -2239,8 +2249,8 @@ strong {
 
 <section class="module">
   <h1 class="u-vspace-m"><strong>Forms</strong></h1>
-<pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="link-forms">
+<code class="language-markup" id="link-forms">
 &lt;link rel="stylesheet" type="text/css" href="css/forms.css">
 </code>
 </pre>
@@ -2249,8 +2259,8 @@ strong {
   <input type="radio" name="foo" value="foo2">
   <div class="clearfix">
     <h3>HTML</H3>
-    <pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-radio">
+<code class="language-markup" id="html-radio">
 &lt;input type="radio" name="foo" value="foo" checked>
 &lt;input type="radio" name="foo" value="foo2">
 </code>
@@ -2295,8 +2305,8 @@ input[type="radio"]:checked:before {
   <input type="checkbox" class="checkbox" name="foo" value="foo">
   <div class="clearfix">
     <h3>HTML</H3>
-    <pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-checkbox">
+<code class="language-markup" id="html-checkbox">
 &lt;input type="checkbox" class="checkbox" name="foo" value="foo">
 </code>
 </pre>
@@ -2337,8 +2347,8 @@ input[type=checkbox]:checked.checkbox:after  {
   <input type="checkbox" class="toogle" name="foo" value="foo">
   <div class="clearfix">
     <h3>HTML</H3>
-    <pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-toggle">
+<code class="language-markup" id="html-toggle">
 &lt;input type="checkbox" class="toogle" name="foo" value="foo">
 </code>
 </pre>
@@ -2403,8 +2413,8 @@ input[type=checkbox]:checked.toogle:before {
 
 <div class="clearfix">
     <h3>HTML</H3>
-    <pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-input">
+<code class="language-markup" id="html-inputs">
 /* you can adapt and use the grid you need */
 &lt;div class="Grid">
   &lt;div class="Grid-inner Grid-inner--vcenter">
@@ -2464,8 +2474,8 @@ label {
 
 <div class="clearfix">
     <h3>HTML</H3>
-    <pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-input-icon">
+<code class="language-markup" id="html-inputs-icon">
 /* you can adapt and use the grid you need */
 &lt;div class="Grid">
   &lt;div class="Grid-inner Grid-inner--vcenter">
@@ -2543,8 +2553,8 @@ label {
 
 <div class="clearfix">
     <h3>HTML</H3>
-    <pre class="prettyprint">
-<code class="language-markup">
+<pre class="prettyprint copy-box" data-clipboard-target="html-selects">
+<code class="language-markup" id="html-selects">
 /* you can adapt and use the grid you need */
 &lt;div class="Grid">
   &lt;div class="Grid-inner Grid-inner--vcenter">
@@ -2654,8 +2664,9 @@ label {
 
 <section class="module">
 <h1 class="u-vspace-m"><strong>Tooltips & Dropdowns</strong></h1>
-<pre class="prettyprint">
-<code class="language-markup">
+
+<pre class="prettyprint copy-box" data-clipboard-target="link-dropdowns">
+<code class="language-markup" id="link-dropdowns">
 &lt;link rel="stylesheet" type="text/css" href="css/tooltip.css">
 </code>
 </pre>
@@ -2730,8 +2741,10 @@ label {
 </div>
 <div class="clearfix">
     <h3>HTML</H3>
-    <pre class="prettyprint">
-<code class="language-markup">
+
+
+<pre class="prettyprint copy-box" data-clipboard-target="html-tooltips">
+<code class="language-markup" id="html-tooltips">
 /* We can change the tooltip's alignment
 Horizontal (Tooltip--horizontal-left, Tooltip--horizontal-right, Tooltip--horizontal-middle )
 Vertical(Tooltip--vertical-bottom, Tooltip--vertical-top)*/
@@ -2830,7 +2843,7 @@ Vertical(Tooltip--vertical-bottom, Tooltip--vertical-top)*/
 </div>
 
 
-
+<hr>
 
 <h2>Dropdowns</h2>
 <div class="block clearfix">
@@ -2850,82 +2863,85 @@ Vertical(Tooltip--vertical-bottom, Tooltip--vertical-top)*/
       </div>
 
     </div>
-    
+</div>
+    <div class="clearfix">
+    <h3>HTML</h3>
 
+
+<pre class="prettyprint copy-box" data-clipboard-target="html-dropdown">
+<code class="language-markup" id="html-dropdown">
+&lt;p>Text where if you make
+  &lt;a href="#" class="js-dropdown">
+    Top and center
+  &lt;/a>
+&lt;/p>
+&lt;div class="Dropdown">
+  &lt;ul>
+    &lt;li class="Dropdown-item">&lt;a href="#" class="is-selected">Your maps&lt;/a>&lt;/li>
+    &lt;li class="Dropdown-item">&lt;a href="#">Your datasets&lt;/a>&lt;/li>
+    &lt;li class="Dropdown-item">&lt;a href="#">Your locked datasets&lt;/a>&lt;/li>
+    &lt;li class="Dropdown-item">&lt;a href="#">Your locked maps&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
+</code>
+</pre>
+
+    <h3>CSS</h3>
+<pre class="prettyprint">
+<code class="language-css">
+.Dropdown {
+  position: absolute;
+  padding: 12px 20px;
+  font: 400 13px 'Lato';
+  background: #fff;
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+  z-index: 1;
+  width:  260px;
+  top: 160%;
+  bottom: auto;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+}
+.Dropdown.is-active {
+  display: block;
+}
+.Dropdown:before {
+  content:"";
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -4px;
+  top: -16px;
+  -webkit-filter: drop-shadow(0 -2px 1px rgba(0, 0, 0, .1));
+  filter: drop-shadow(0 -2px 1px rgba(0, 0, 0, .1));
+}
+.Dropdown-item {
+  font: 15px 'Lato';
+  margin-bottom: 14px;
+}
+.Dropdown-item:last-child {
+  margin-bottom: 0;
+}
+</code>
+</pre>
 
 </div>
+
+
+
+
 
 
 </section>
 
 </div>
 
-<script>
-  $( document ).ready(function() {
-    $( ".js-navigation a" ).click(function(e) {
-       e.preventDefault();
-       $( ".js-navigation a" ).toggleClass("is-selected");
-    });
 
-
-    $(".js-dropdown").click(function(e){
-      e.preventDefault();
-      var posX = $(this).position().left ,posY = $(this).position().top;
-      $(".Dropdown").css('display', 'block');
-
-      $(".Dropdown").css('left', (e.pageX)-120);
-      $(".Dropdown").css('top', (e.pageY)+20);
-    });
-
-    $('select').each(function(){
-        var $this = $(this), numberOfOptions = $(this).children('option').length;
-      
-        $this.addClass('select-hidden'); 
-        $this.wrap('<div class="select"></div>');
-        $this.after('<div class="select-styled"></div>');
-
-        var $styledSelect = $this.next('div.select-styled');
-        $styledSelect.text($this.children('option').eq(0).text());
-      
-        var $list = $('<ul />', {
-            'class': 'select-options'
-        }).insertAfter($styledSelect);
-      
-        for (var i = 0; i < numberOfOptions; i++) {
-            $('<li />', {
-                text: $this.children('option').eq(i).text(),
-                rel: $this.children('option').eq(i).val()
-            }).appendTo($list);
-        }
-      
-        var $listItems = $list.children('li');
-      
-        $styledSelect.click(function(e) {
-            e.stopPropagation();
-            $('div.select-styled.active').each(function(){
-                $(this).removeClass('active').next('ul.select-options').hide();
-            });
-            $(this).toggleClass('active').next('ul.select-options').toggle();
-        });
-      
-        $listItems.click(function(e) {
-            e.stopPropagation();
-            $styledSelect.text($(this).text()).removeClass('active');
-            $this.val($(this).attr('rel'));
-            $list.hide();
-            //console.log($this.val());
-        });
-      
-        $(document).click(function() {
-            $styledSelect.removeClass('active');
-            $list.hide();
-        });
-
-    });
-
-
-  });
-</script>
+<script src="js/main.js"></script>
 
 <script src="js/prism.js"></script>
 
