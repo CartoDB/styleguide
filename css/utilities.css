@@ -33,34 +33,6 @@
   margin-left: -5px;
 }
 
-.u-vspace-xxl { margin-bottom: 40px; }
-.u-vspace-xl { margin-bottom: 28px; }
-.u-vspace-l { margin-bottom: 20px; }
-.u-vspace-m { margin-bottom: 12px; }
-.u-vspace-s { margin-bottom: 8px; }
-.u-vspace-xs { margin-bottom: 4px; }
-
-.u-lspace-xxl { margin-left: 40px; }
-.u-lspace-xl { margin-left: 28px; }
-.u-lspace-l { margin-left: 20px; }
-.u-lspace-m { margin-left: 12px; }
-.u-lspace-s { margin-left: 8px; }
-.u-lspace-xs { margin-left: 4px; }
-
-.u-rspace-xxl { margin-right: 40px; }
-.u-rspace-xl { margin-right: 28px; }
-.u-rspace-l { margin-right: 20px; }
-.u-rspace-m { margin-right: 12px; }
-.u-rspace-s { margin-right: 8px; }
-.u-rspace-xs { margin-right: 4px; }
-
-.u-tspace-xxl { margin-top: 40px; }
-.u-tspace-xl { margin-top: 24px; }
-.u-tspace-l { margin-top: 20px; }
-.u-tspace-m { margin-top: 12px; }
-.u-tspace-s { margin-top: 8px; }
-.u-tspace-xs { margin-top: 4px; }
-
 
 .u-img-circle { border-radius: 50%; }
 
