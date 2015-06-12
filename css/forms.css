@@ -184,3 +184,16 @@ input[type=checkbox] {
   .select-options > li[rel="hide"] {
     display: none;
   }
+
+.ListOptions input {
+  margin-right: 5px;
+}
+.ListOptions > li {
+  margin-bottom: 20px;
+}
+.ListOptions label {
+  cursor: pointer;
+}
+.ListOptions > li:last-child {
+  margin-bottom: 0;
+}

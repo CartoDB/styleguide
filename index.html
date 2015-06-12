@@ -1837,13 +1837,13 @@
           <p class="color-white">&lt;div class="fill fill-blue"></p>
         </div>
         <div class="fill fill-blue-light">
-          <p>&lt;div class="fill fill-blue"></p>
+          <p>&lt;div class="fill fill-blue-light"></p>
         </div>
         <div class="fill fill-green">
           <p class="color-white">&lt;div class="fill fill-green"></p>
         </div>
         <div class="fill fill-red">
-          <p class="color-white">&lt;div class="fill fill-green"></p>
+          <p class="color-white">&lt;div class="fill fill-red"></p>
         </div>
         <div class="fill fill-orange">
           <p class="color-white">&lt;div class="fill fill-orange"></p>
@@ -2398,6 +2398,62 @@ input[type="radio"]:checked:before {
 
 
   <hr/>
+  <ul class="ListOptions u-vspace-xl">
+    <li>
+      <label>
+        <input type="checkbox" class="checkbox u-iblock u-malign" for="option1" name="foo" value="foo">
+        <p class="u-iblock u-malign" id="option1"> Option 1</p>
+      </label>
+    </li>
+    <li>
+      <label>
+        <input type="checkbox" for="option2" class="checkbox u-iblock u-malign" name="foo" value="foo">
+        <p class="u-iblock u-malign" id="option2"> Option 2</p>
+      </label>
+    </li>
+  </ul>
+
+  <div class="clearfix">
+    <h3>HTML</H3>
+<pre class="prettyprint copy-box" data-clipboard-target="html-checkbox">
+<code class="language-markup" id="html-checkbox">
+  &lt;ul class="ListOptions">
+    &lt;li>
+      &lt;label>
+        &lt;input type="checkbox" class="checkbox u-iblock u-malign" for="option1" name="foo" value="foo">
+        &lt;p class="u-iblock u-malign" id="option1"> Option 1&lt;/p>
+      &lt;/label>
+    &lt;/li>
+    &lt;li>
+      &lt;label>
+        &lt;input type="checkbox" for="option2" class="checkbox u-iblock u-malign" name="foo" value="foo">
+        &lt;p class="u-iblock u-malign" id="option2"> Option 2&lt;/p>
+      &lt;/label>
+    &lt;/li>
+  &lt;/ul>
+&lt;input type="checkbox" class="checkbox" name="foo" value="foo">
+</code>
+</pre>
+    <h3>CSS</H3>
+    <pre class="prettyprint">
+<code class="language-css">
+.ListOptions input {
+  margin-right: 5px;
+}
+.ListOptions > li {
+  margin-bottom: 20px;
+}
+.ListOptions label {
+  cursor: pointer;
+}
+.ListOptions > li:last-child {
+  margin-bottom: 0;
+}
+</code>
+    </pre>
+</div>
+<hr/>
+
   <input type="checkbox" class="checkbox" name="foo" value="foo">
   <div class="clearfix">
     <h3>HTML</H3>
