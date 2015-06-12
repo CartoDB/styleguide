@@ -48,7 +48,7 @@ input[type=checkbox] {
     position: absolute;
     color: #0090D7;
     text-align: center;
-    line-height: 20px;
+    line-height: 18px;
     font-size: 14px;
     left: 0;
     right: 0;
@@ -189,7 +189,7 @@ input[type=checkbox] {
   margin-right: 5px;
 }
 .ListOptions > li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .ListOptions label {
   cursor: pointer;
