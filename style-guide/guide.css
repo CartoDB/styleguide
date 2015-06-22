@@ -12,15 +12,6 @@ body {
   display: block;
 }
 
-.header {
-  position: fixed;
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, .2);
-  background: rgba(255, 255, 255, .95);
-  left: 0;
-  right: 0;
-  top: 0;
-}
 .header h1 {
   padding-top: 10px;
 }

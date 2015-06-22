@@ -23,6 +23,10 @@
   justify-content: center;
 }
 
+.Grid-inner--hfull {
+  height: 100vh;
+}
+
 .Grid-inner--vcenter {
   align-items: center;
 }
@@ -35,14 +39,9 @@
   padding: 0 20px;
 }
 
-.Grid-inner--nopadding {
-  margin-right: 0;
-  margin-left: 0;
-
-  > .Grid-cell {
-    padding-left: 0;
-    padding-right: 0;
-  }
+.Grid-inner--nopadding  > .Grid-cell {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .Grid--between {

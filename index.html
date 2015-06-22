@@ -10,7 +10,6 @@
 
 
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/prism.css">
 <link rel="stylesheet" type="text/css" href="css/icons.css">
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/grid.css">
@@ -22,17 +21,20 @@
 <link rel="stylesheet" type="text/css" href="css/navigation.css">
 <link rel="stylesheet" type="text/css" href="css/tooltip.css">
 <link rel="stylesheet" type="text/css" href="css/spacing.css">
-<link rel="stylesheet" type="text/css" href="css/guide.css">
+<link rel="stylesheet" type="text/css" href="css/elements.css">
+
+<link rel="stylesheet" type="text/css" href="style-guide/prism.css">
+<link rel="stylesheet" type="text/css" href="style-guide/guide.css">
 
 </head>
 
 <body>
 
-<div class="header">
+<div class="HeaderFixed">
   <div class="container u-txt-center clearfix">
     <h1 class="u-left"><strong>Carto</strong>Style</h1>
     <p class="button button--blue u-right">
-      <a href="css.zip">
+      <a href="output/styleguide.zip">
         Download styleguide
       </a>
     </p>
@@ -426,12 +428,151 @@
 }
 </code>
 </pre>
+<hr>
+
+    <h2>Layout 2 columns</h2>
+
+    <div class="inner u-vspace-xl">
+
+      <div class="Grid">
+        <div class="Grid-inner Grid-inner--hfull">
+          <div class="Grid-cell fill-blue Grid-cell--col9">
+            9 columns
+          </div>
+          <div class="Grid-cell fill-dark Grid-cell--col3">
+            3 columns center
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
   </div>
 
+<hr>
 
 
-  </section>
+<section class="module">
+    <h1 class="u-vspace-m"><strong>Layouts and elements</strong></h1>
+<pre class="prettyprint copy-box u-pr" data-clipboard-target="link-margins">
+<code class="language-markup" id="link-margins">
+&lt;link rel="stylesheet" type="text/css" href="css/elements.css">
+</code>
+</pre>
+
+<h2>Floating Box</h2>
+<div class="block clearfix">
+  <div class="FloatingBox u-padding-xl">
+    Element
+  </div>
+</div>
+
+
+<div class="clearfix">
+
+<h3>HTML</H3>
+
+<pre class="prettyprint copy-box" data-clipboard-target="html-floating-box">
+<code class="language-markup" id="html-floating-box">
+/* you can modify the padding with the helpers */
+&lt;div class="FloatingBox u-padding-xl">
+  Element
+&lt;/div>
+</code>
+</pre>
+
+
+<h3>CSS</H3>
+<pre class="prettyprint">
+<code class="language-css">
+.floatingBox {
+  background: #fff;
+  box-shadow: rgba(0,0,0,0.2) 0 0 4px 2px;
+  border-radius: 4px;
+  border: 1px solid #999999;
+  background: white;
+  z-index: 3;
+}
+
+.floatingBox--left {
+  left: 24px;
+  top: 24px;
+}
+
+.floatingBox--right {
+  right: 24px;
+  top: 24px;
+}
+</code>
+</pre>
+
+  </div>
+    <hr/>
+
+<h2>Floating Box left position absolute</h2>
+<div class="block clearfix u-pr" style="height: 300px;">
+  <div class="FloatingBox FloatingBox--left u-pa u-padding-xl">
+    Element
+  </div>
+</div>
+
+<div class="clearfix">
+
+<h3>HTML</H3>
+
+<pre class="prettyprint copy-box" data-clipboard-target="html-floating-box-left">
+<code class="language-markup" id="html-floating-box-left">
+/* you can modify the padding with the helpers */
+&lt;div class="FloatingBox FloatingBox--left u-pa u-padding-xl">
+  Element
+&lt;/div>
+</code>
+</pre>
+  </div>
+    <hr/>
+
+<h2>Floating Box right position absolute</h2>
+<div class="block clearfix u-pr" style="height: 300px;">
+  <div class="FloatingBox FloatingBox--right u-pa u-padding-xl">
+    Element
+  </div>
+</div>
+
+<div class="clearfix">
+
+<h3>HTML</H3>
+
+<pre class="prettyprint copy-box" data-clipboard-target="html-floating-box-right">
+<code class="language-markup" id="html-floating-box-right">
+/* you can modify the padding with the helpers */
+&lt;div class="FloatingBox FloatingBox--right u-pa u-padding-xl">
+  Element
+&lt;/div>
+</code>
+</pre>
+  </div>
+
+<hr/>
+<h1 class="u-vspace-m"><strong>Fix header</strong></h1>
+<pre class="prettyprint copy-box u-pr" data-clipboard-target="link-grid">
+<code class="language-markup" id="link-grid">
+&lt;link rel="stylesheet" type="text/css" href="css/elements.css">
+</code>
+</pre>
+<h3>HTML</H3>
+
+<pre class="prettyprint copy-box" data-clipboard-target="html-header-fix">
+<code class="language-markup" id="html-header-fix">
+&lt;div class="HeaderFixed">
+  Header fix
+&lt;/div>
+</code>
+</pre>
+
+</section>
+
 
 
 <section class="module">
